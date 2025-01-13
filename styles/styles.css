@@ -1,0 +1,179 @@
+/* Base CSS Styles */
+
+/* General Reset */
+body, h1, h2, h3, p, figure, img, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2a2d34;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #ffd700; /* Color dorado para el título principal */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #444; /* Fondo diferente para el menú */
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #666;
+}
+
+/* Main Container */
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Card Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr; /* Ajusta las proporciones de las columnas */
+    gap: 20px;
+    max-width: 80%; /* Asegúrate de que ocupe todo el ancho disponible */
+    padding: 20px 20px; /* Añade un poco de padding a los lados */
+    margin: 0 auto; /* Centra el contenedor */
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .split {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .about-me, .arequipa {
+    flex: 1;
+  }
+  
+  .about-me-photo, .arequipa-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-me-photo img, .arequipa-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+    .split {
+      flex-direction: column;
+    }
+  }
+  
+  .card-header {
+    background-color: #2a2d34;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 8px 8px 0 0;
+  }
+.card-header {
+    background-color: #2a2d34;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-content {
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+}
+
+/* Inner Grid for "About Me" and "Toloria, Madagascar" */
+.card-content.split {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* Section Titles */
+.card-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+/* Web Dev Resources */
+.card-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-content ul li {
+    margin-bottom: 0.5rem;
+}
+
+.card-content ul li a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.card-content ul li a:hover {
+    color: #0056b3;
+}
+
+
+/* Footer */
+footer {
+    background-color: #2a2d34;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}

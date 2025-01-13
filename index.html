@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals - Brando Pinto."
+    />
+    <meta name="Brando Pinto" content="Brando Pinto" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Brando Pinto</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Brando Pinto</h1>
+      <nav>
+        <a href="https://www.linkedin.com/in/brando-pinto-2109b5208/" target="_blank">LinkedIn</a>
+        <a href="https://byupw.instructure.com" target="_blank">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/122?lang=eng&id=p6-p9#p6" target="_blank"
+          >Scripture</a
+        >
+        <a href="#">Final Project</a>
+      </nav>
+    </header>
+
+    <main class="grid-container">
+      <!-- First Card -->
+      <section class="card card-wide">
+        <div class="card-header">About Me</div>
+        <div class="card-content split">
+          <div class="about-me">
+            <h2>About Me</h2>
+            <p>
+                My name is Brando, I am from Arequipa Peru, I like to play soccer and spend time with my friends.
+            </p>
+          </div>
+          <div class="about-me-photo">
+            <img src="images/me.jpg" alt="Photo of Brando Pinto">
+          </div>
+        </div>
+        <div class="card-content split">
+          <div class="arequipa-photo">
+            <img src="images/arequipa.jpg" alt="Photo of Brando Pinto">
+          </div>
+          <div class="arequipa">
+            <h2>Areqipa, Peru</h2>
+            <p>
+                Arequipa is the 2nd largest city in Peru, it is known as the white city. 
+            </p>
+          </div>
+        </div>
+      </section>    
+      <!-- Second Card -->
+      <section class="card card-narrow">
+        <div class="card-header">Web Dev Resources</div>
+        <div class="card-content">
+          <ul>
+            <li><a href="https://dev.to">Dev.to Community</a></li>
+            <li><a href="https://www.smashingmagazine.com">Smashing Magazine</a></li>
+            <li><a href="https://css-tricks.com">CSS Tricks</a></li>
+            <li><a href="https://www.w3schools.com">W3 Schools</a></li>
+            <li><a href="https://www.udemy.com">Udemy</a></li>
+            <li><a href="https://placeholder.com">Image Placeholder</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Brando Pinto</p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+  </body>
+</html>
