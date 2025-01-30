@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Brando Pinto ",
+    "address": "123 Juan Polar, Arequipa, Peru",
+    "phone": "901-491-760",
+    "website": "https://brandopinto.github.io/wdd230/chamber/",
+    "image": "images/directory/directory-1.png",
+    "membershipLevel": "Gold",
+    "description": "Good."
+  },
+  {
+    "name": "Martin Perez",
+    "address": "321 Juan Polar, Arequipa, Peru",
+    "phone": "901-491-860",
+    "website": "https://brandopinto.github.io/wdd230/chamber/",
+    "image": "images/directory/directory-2.png",
+    "membershipLevel": "Silver",
+    "description": "Good."
+  },
+  {
+    "name": "Paolo Cardenas",
+    "address": "789 Juan Polar, Arequipa, Peru",
+    "phone": "901-491-761",
+    "website": "https://brandopinto.github.io/wdd230/chamber/",
+    "image": "images/directory/directory-3.png",
+    "membershipLevel": "Silver",
+    "description": "Good."
+  },
+  {
+    "name": "Micaela Bastidas",
+    "address": "564 Juan Polar, Arequipa, Peru",
+    "phone": "901-451-760",
+    "website": "https://brandopinto.github.io/wdd230/chamber/",
+    "image": "images/directory/directory-4.png",
+    "membershipLevel": "Silver",
+    "description": "Good."
+  },
+  {
+    "name": "Katy Perry",
+    "address": "963 Juan Polar, Arequipa, Peru",
+    "phone": "921-491-760",
+    "website": "https://brandopinto.github.io/wdd230/chamber/",
+    "image": "images/directory/directory-5.png",
+    "membershipLevel": "Bronze",
+    "description": "Good."
+  },
+  {
+    "name": "Ariana Jara",
+    "address": "202 Juan Polar, Arequipa, Peru",
+    "phone": "921-401-760",
+    "website": "https://brandopinto.github.io/wdd230/chamber/",
+    "image": "images/directory/directory-6.png",
+    "membershipLevel": "Bronze",
+    "description": "Good."
+  },
+  {
+    "name": "Martha Pinto",
+    "address": "C25 Juan Polar, Arequipa, Peru",
+    "phone": "921-497-760",
+    "website": "https://brandopinto.github.io/wdd230/chamber/",
+    "image": "images/directory/directory-7.png",
+    "membershipLevel": "Bronze",
+    "description": "Good."
+  }
+]
