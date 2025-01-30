@@ -1,54 +1,86 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const directoryContainer = document.querySelector('.directory-main .list');
-  const gridViewButton = document.getElementById('grid');
-  const listViewButton = document.getElementById('list');
-  let membersData = [];
+document.addEventListener("DOMContentLoaded", () => {
+  const directoryContainer = document.querySelector(".directory-main .list");
+  const gridViewButton = document.getElementById("grid");
+  const listViewButton = document.getElementById("list");
+  let companiesData = [];
 
-  const fetchMembers = async () => {
+  const fetchCompanies = async () => {
     try {
-      const response = await fetch('data/members.json');
-      if (!response.ok) throw new Error('Network response was not ok');
+      const response = await fetch("data/members.json");
+      if (!response.ok) throw new Error("Error fetching data.");
       const data = await response.json();
-      membersData = data;
-      displayMembers(membersData);
+      companiesData = data;
+      displayCompanies(companiesData);
     } catch (error) {
-      console.error('Error fetching the members:', error);
+      console.error("Error fetching companies:", error);
     }
   };
 
-  const displayMembers = (members, viewType = 'grid') => {
-    directoryContainer.innerHTML = '';
-    members.forEach((member) => {
-      const memberElement = document.createElement('div');
-      memberElement.classList.add(viewType === 'grid' ? 'member-card' : 'member-list-item');
-      if (viewType === 'grid') {
-        memberElement.innerHTML = `
-          <img src="${member.image}" alt="${member.name}">
-          <h3>${member.name}</h3>
-          <p>${member.address}</p>
-          <p>${member.phone}</p>
-          <a href="${member.website}">Visit</a>
-          <p>Membership Level: ${member.membershipLevel}</p>
-          <p>${member.description}</p>
+  const displayCompanies = (companies, viewType = "grid") => {
+    directoryContainer.innerHTML = "";
+    
+    // Si la vista es lista, usamos un <ul> para el contenedor
+    if (viewType === "list") {
+      const ulElement = document.createElement("ul");
+      ulElement.classList.add("company-list");
+  
+      companies.forEach((company) => {
+        const liElement = document.createElement("li");
+        liElement.classList.add("company-list-item");
+        
+        liElement.innerHTML = `
+          <h3>${company.name}</h3>
+          <p><strong>Address:</strong> ${company.address}</p>
+          <p><strong>Phone:</strong> ${company.phone}</p>
+          <a href="${company.website}" target="_blank">Visit Website</a>
+          <p><strong>Membership Level:</strong> ${getMembershipLevel(company.membershipLevel)}</p>
         `;
-      } else {
-        memberElement.innerHTML = `
-          <h3>${member.name}</h3>
-          <p>${member.phone}</p>
-          <a href="${member.website}">Visit</a>
+        
+        ulElement.appendChild(liElement);
+      });
+  
+      directoryContainer.appendChild(ulElement);
+    } else {
+      // Código para la vista en grid, no cambia
+      companies.forEach((company) => {
+        const companyElement = document.createElement("div");
+        companyElement.classList.add("company-card");
+        companyElement.innerHTML = `
+          <img src="${company.image}" alt="Logo of ${company.name}" loading="lazy">
+          <h3>${company.name}</h3>
+          <p><strong>Address:</strong> ${company.address}</p>
+          <p><strong>Phone:</strong> ${company.phone}</p>
+          <a href="${company.website}" target="_blank">Visit Website</a>
+          <p><strong>Membership Level:</strong> ${getMembershipLevel(company.membershipLevel)}</p>
+          <p>${company.description}</p>
         `;
-      }
-      directoryContainer.appendChild(memberElement);
-    });
+        
+        directoryContainer.appendChild(companyElement);
+      });
+    }
+  };
+  
+
+  const getMembershipLevel = (level) => {
+    switch (level) {
+      case "1":
+        return "Member";
+      case "2":
+        return "Silver";
+      case "3":
+        return "Gold";
+      default:
+        return "Unknown";
+    }
   };
 
-  gridViewButton.addEventListener('click', () => {
-    displayMembers(membersData, 'grid');
+  gridViewButton.addEventListener("click", () => {
+    displayCompanies(companiesData, "grid");
   });
 
-  listViewButton.addEventListener('click', () => {
-    displayMembers(membersData, 'list');
+  listViewButton.addEventListener("click", () => {
+    displayCompanies(companiesData, "list");
   });
 
-  fetchMembers();
+  fetchCompanies();
 });

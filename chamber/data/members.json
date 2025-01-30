@@ -1,65 +1,65 @@
 [
   {
-    "name": "Brando Pinto ",
-    "address": "123 Juan Polar, Arequipa, Peru",
-    "phone": "901-491-760",
-    "website": "https://brandopinto.github.io/wdd230/chamber/",
-    "image": "images/directory/directory-1.png",
-    "membershipLevel": "Gold",
-    "description": "Good."
+    "name": "Bitel S.A.",
+    "address": "Av. Industrial 123, Arequipa, Peru",
+    "phone": "+51 901 491 760",
+    "website": "https://bitel.com.pe",
+    "image": "images/directory/bitel.png",
+    "membershipLevel": "3",
+    "description": "A leading mobile service provider in Peru."
   },
   {
-    "name": "Martin Perez",
-    "address": "321 Juan Polar, Arequipa, Peru",
-    "phone": "901-491-860",
-    "website": "https://brandopinto.github.io/wdd230/chamber/",
-    "image": "images/directory/directory-2.png",
-    "membershipLevel": "Silver",
-    "description": "Good."
+    "name": "Movistar SAC",
+    "address": "Calle Comercio 456, Arequipa, Peru",
+    "phone": "+51 901 491 860",
+    "website": "https://movistar.com.pe",
+    "image": "images/directory/movistar.png",
+    "membershipLevel": "2",
+    "description": "A major telecommunications company providing mobile services in Peru."
   },
   {
-    "name": "Paolo Cardenas",
-    "address": "789 Juan Polar, Arequipa, Peru",
-    "phone": "901-491-761",
-    "website": "https://brandopinto.github.io/wdd230/chamber/",
-    "image": "images/directory/directory-3.png",
-    "membershipLevel": "Silver",
-    "description": "Good."
+    "name": "Claro",
+    "address": "Av. Aviación 789, Arequipa, Peru",
+    "phone": "+51 901 491 761",
+    "website": "https://claro.com.pe",
+    "image": "images/directory/claro.png",
+    "membershipLevel": "2",
+    "description": "A telecommunications operator offering mobile and internet services in Peru."
   },
   {
-    "name": "Micaela Bastidas",
-    "address": "564 Juan Polar, Arequipa, Peru",
-    "phone": "901-451-760",
-    "website": "https://brandopinto.github.io/wdd230/chamber/",
-    "image": "images/directory/directory-4.png",
-    "membershipLevel": "Silver",
-    "description": "Good."
+    "name": "Inka Kola",
+    "address": "Jr. Progreso 564, Arequipa, Peru",
+    "phone": "+51 901 451 760",
+    "website": "https://inkakola.com.pe",
+    "image": "images/directory/inka-kola.png",
+    "membershipLevel": "2",
+    "description": "A popular Peruvian soda brand known for its unique flavor."
   },
   {
-    "name": "Katy Perry",
-    "address": "963 Juan Polar, Arequipa, Peru",
-    "phone": "921-491-760",
-    "website": "https://brandopinto.github.io/wdd230/chamber/",
-    "image": "images/directory/directory-5.png",
-    "membershipLevel": "Bronze",
-    "description": "Good."
+    "name": "Norkys",
+    "address": "Av. Las Torres 963, Arequipa, Peru",
+    "phone": "+51 921 491 760",
+    "website": "https://norkys.com.pe",
+    "image": "images/directory/norkys.webp",
+    "membershipLevel": "1",
+    "description": "A popular chicken restaurant chain in Peru."
   },
   {
-    "name": "Ariana Jara",
-    "address": "202 Juan Polar, Arequipa, Peru",
-    "phone": "921-401-760",
-    "website": "https://brandopinto.github.io/wdd230/chamber/",
-    "image": "images/directory/directory-6.png",
-    "membershipLevel": "Bronze",
-    "description": "Good."
+    "name": "Pollo el Pepe",
+    "address": "Av. Tecnológica 202, Arequipa, Peru",
+    "phone": "+51 921 401 760",
+    "website": "https://pollopepe.com",
+    "image": "images/directory/pollo-pepe.png",
+    "membershipLevel": "1",
+    "description": "A well-known chicken restaurant offering tasty and crispy dishes."
   },
   {
-    "name": "Martha Pinto",
-    "address": "C25 Juan Polar, Arequipa, Peru",
-    "phone": "921-497-760",
-    "website": "https://brandopinto.github.io/wdd230/chamber/",
-    "image": "images/directory/directory-7.png",
-    "membershipLevel": "Bronze",
-    "description": "Good."
+    "name": "Teros",
+    "address": "Calle Fábrica C25, Arequipa, Peru",
+    "phone": "+51 921 497 760",
+    "website": "https://teros.com",
+    "image": "images/directory/teros.png",
+    "membershipLevel": "1",
+    "description": "A leading technology company specializing in innovative solutions."
   }
 ]
