@@ -1,73 +1,92 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Brando Pinto" />
+    <meta property="og:title" content="Arequipa Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://ih1.redbubble.net/image.583718385.4918/st,small,845x845-pad,1000x1000,f8f8f8.u1.jpg"
+    />
+    <meta
+      name="description"
+      content="Directory page of the website Arequipa Chamber of Commerce. It displays information about the business that belong to the Chamber. "
+    />
+    <meta
+      property="og:url"
+      content="https://brandopinto.github.io/wdd230/chamber/directory.html"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Signika+Negative&display=swap"
+      rel="stylesheet"
+    />
+    <meta property="og:image" content="images/logo/aqp.jpg" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Brando Pinto">
-  <meta property="og:title" content="Arequipa Chamber of Commerce">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://ih1.redbubble.net/image.583718385.4918/st,small,845x845-pad,1000x1000,f8f8f8.u1.jpg">
-  <meta name="description"
-    content="Directory page of the website Arequipa Chamber of Commerce. It displays information about the business that belong to the Chamber. ">
-  <meta property="og:url" content="https://brandopinto.github.io/wdd230/chamber/directory.html">
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/medium.css">
-  <link rel="stylesheet" href="styles/larger.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Signika+Negative&display=swap"
-    rel="stylesheet">
-  <link rel="icon" href="images/logo/aqp.jpg">
-  <title>Directory - Arequipa Chamber of Commerce</title>
-</head>
+    <link rel="icon" href="images/logo/aqp.jpg" />
+    <title>Directory - Arequipa Chamber of Commerce</title>
+  </head>
 
-<body>
-  <header>
-    <div class="header-logo"><a href="./"><img src="images/logo/aqp.jpg" alt="Arequipa Chamber of Commerce Logo"></a>
-    </div>
-    <h1 class="header-h1">Arequipa Chamber of Commerce</h1>
-    <p id="todaysDate"></p>
-    <nav>
-      <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-      <ul id="primaryNav">
-        <li><a href="./">Home</a></li>
-        <li><a href="#">Discover</a></li>
-        <li class="active"><a href="directory.html">Directory</a></li>
-        <li><a href="#">Join</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="directory-main">
-    <div>
-      <p></p>
-    </div>
-    <div id="directory-meeting-banner"></div>
-    <div class="menu">
-      <button id="grid">GRID</button>
-      <button id="list">LIST</button>
-    </div>
+  <body>
+    <header>
+      <div class="header-logo">
+        <a href="./"
+          ><img
+            src="images/logo/aqp.jpg"
+            alt="Arequipa Chamber of Commerce Logo"
+        /></a>
+      </div>
+      <h1 class="header-h1">Arequipa Chamber of Commerce</h1>
+      <p id="todaysDate"></p>
+      <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+          <li><a href="./">Home</a></li>
+          <li><a href="#">Discover</a></li>
+          <li class="active"><a href="directory.html">Directory</a></li>
+          <li><a href="#">Join</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="directory-main">
+      <div>
+        <p></p>
+      </div>
+      <div id="directory-meeting-banner"></div>
+      <div class="menu">
+        <button id="grid">GRID</button>
+        <button id="list">LIST</button>
+      </div>
 
-    <div class="list">
-
-    </div>
-  </main>
-  <footer>
-    <div class="footer-section3">
-      <p class="copyright">&copy; <span id="currentyear"></span> Arequipa Chamber </p>
-      <p class="footer-name"><span class="footer-separator"> | </span> Brando Pinto <span class="footer-separator"> |
-        </span></p>
-      <p class="footer-wdd230">WDD 231<span class="footer-separator"> | </span></p>
-      <p class="lastmodified"></p>
-    </div>
-    <div class="footer-section4">
-      <p class="lastmodified2"></p>
-    </div>
-  </footer>
-  <script src="scripts/main.js"></script>
-  <script src="scripts/directory.js"></script>
-</body>
-
+      <div class="list"></div>
+    </main>
+    <footer>
+      <div class="footer-section3">
+        <p class="copyright">
+          &copy; <span id="currentyear"></span> Arequipa Chamber
+        </p>
+        <p class="footer-name">
+          <span class="footer-separator"> | </span> Brando Pinto
+          <span class="footer-separator"> | </span>
+        </p>
+        <p class="footer-wdd230">
+          WDD 231<span class="footer-separator"> | </span>
+        </p>
+        <p class="lastmodified"></p>
+      </div>
+      <div class="footer-section4">
+        <p class="lastmodified2"></p>
+      </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/directory.js"></script>
+  </body>
 </html>
